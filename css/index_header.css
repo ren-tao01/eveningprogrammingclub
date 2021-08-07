@@ -1,0 +1,48 @@
+.header {
+  width: 70%;
+  height: 58vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-image: url("../img/header_background.jpg")
+}
+
+.header_logoBlock {
+  width: 15%;
+}
+
+.logoBlock_nameOfTheTeam {
+  font-size: 20px;
+  color: white;
+}
+
+.header_searchBlock {
+  width: 60%;
+  height: 15vh;
+  margin-left: 20%;
+  padding-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.searchBlock_title {
+  font-size: 40px;
+  color: white;
+}
+
+.searchBlock_searchLine {
+  height: 3vh;
+  padding: 12px 20px;
+  font-size: 20px;
+  -webkit-transition: 0.5s;
+  border: 3px solid silver;
+  box-sizing: inherit;
+  outline: none;
+}
+
+.searchBlock_searchLine:focus {
+  border: 3px solid #555;
+}

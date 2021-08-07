@@ -1,0 +1,48 @@
+main {
+    width: 80%;
+    margin: 3vh 0 0 15%;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.center-content {
+    width: 60%;
+    border: solid 1px;
+    
+}
+
+.content {
+    text-align: center;
+}
+
+.side-content {
+    padding: 0 0 1.5% 1.5%;
+    width: 40%;
+    border: solid 1px;
+    align-items: center;
+}
+
+.side-content > article {
+    width: 98%;
+    margin-top: 1.5vh;
+    border: solid 1px;
+    
+}
+
+.side-content > article > h2 {
+    
+    margin: auto;
+}
+.side-content > article > p {
+    width: 90%;
+    margin: auto;
+    
+
+}
+
+footer {
+    margin-top: 2%;
+    border-top: double 1px;
+    text-align: center;
+}
