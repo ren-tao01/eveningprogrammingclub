@@ -1,0 +1,106 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather by EPC</title>
+  <link rel="stylesheet" href="static/index_container.css">
+  <link rel="stylesheet" href="static/index_header.css">
+  <link rel="stylesheet" href="static/main-btm.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+
+      <div class="header_logoBlock">
+        <h3 class="logoBlock_nameOfTheTeam">Evening Programming Club</h3>
+      </div>
+
+      <div class="header_searchBlock">
+        <h1 class="searchBlock_title">Check if you need an umbrella today</h1>
+
+        <form method="POST">
+          <input type="text" size="40" placeholder="Search..." name="usr-city" class="searchBlock_searchLine">
+          <input type="submit" value="Search Weather">
+        </form>
+
+      </div>
+
+    </header>
+
+  </div>
+  <main>
+
+    <table cellspacing="5" class="center-content content info-box">
+      <tr>
+        <th>City</th>
+        <th>Temperature (°F)</th>
+        <th>Min / Max (°F)</th>
+        <th>Weather</th>
+        <th>Humidity (%)</th>
+      </tr>
+      {% for item in weatherlst %}
+      <tr>
+        <td>{{ item.city }}</td>
+        <td>{{ item.temp }}</td>
+        <td>{{ item.minmax }}</td>
+        <td>{{ item.weather }}</td>
+        <td>{{ item.humidity }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <div class="side-content">
+      <article>
+        <h2>
+          Article 1
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Suspendisse venenatis lorem sed erat vehicula, quis feugiat metus porta.
+          Donec porttitor dui non vehicula facilisis. Suspendisse quis leo eget
+          ipsum tincidunt hendrerit quis ac felis. Quisque interdum eget elit ut
+          posuere. Curabitur enim orci, malesuada at accumsan et, blandit a sem.
+          Donec sagittis metus ornare massa facilisis gravida. Phasellus at
+          interdum turpis, eu facilisis mi. Nullam hendrerit ante ipsum, eu aliquet
+          tellus rhoncus sed. Duis ut commodo nulla. Suspendisse gravida dui a
+          posuere consequat. Suspendisse feugiat tellus non nibh iaculis, in tempus
+          ligula mollis. Vestibulum at ligula sit amet massa pulvinar faucibus.
+          Pellentesque lacinia fermentum justo, et volutpat elit mattis et. Praesent
+          non porttitor lorem, ac commodo est. Nulla mauris metus, porttitor quis
+          mollis id, egestas vestibulum nibh.
+        </p>
+
+      </article>
+
+      <article>
+        <h2>
+          Article 2
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Suspendisse venenatis lorem sed erat vehicula, quis feugiat metus porta.
+          Donec porttitor dui non vehicula facilisis. Suspendisse quis leo eget
+          ipsum tincidunt hendrerit quis ac felis. Quisque interdum eget elit ut
+          posuere. Curabitur enim orci, malesuada at accumsan et, blandit a sem.
+          Donec sagittis metus ornare massa facilisis gravida. Phasellus at
+          interdum turpis, eu facilisis mi. Nullam hendrerit ante ipsum, eu aliquet
+          tellus rhoncus sed. Duis ut commodo nulla. Suspendisse gravida dui a
+          posuere consequat. Suspendisse feugiat tellus non nibh iaculis, in tempus
+          ligula mollis. Vestibulum at ligula sit amet massa pulvinar faucibus.
+          Pellentesque lacinia fermentum justo, et volutpat elit mattis et. Praesent
+          non porttitor lorem, ac commodo est. Nulla mauris metus, porttitor quis
+          mollis id, egestas vestibulum nibh.
+        </p>
+
+      </article>
+    </div>
+  </main>
+
+</body>
+<footer>
+  By Evening Programming Club 2021
+</footer>
+
+</html>

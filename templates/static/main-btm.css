@@ -1,3 +1,12 @@
+table {
+  border: 1px solid;
+}
+
+th, td {
+  padding: 10px;
+}
+
+
 body {
     background-color: #ddd6d6;
 }
@@ -12,7 +21,7 @@ main {
 
 .center-content {
     width: 60%;
-    border: solid 1px;  
+    border: solid 1px;
 }
 
 .content {
@@ -42,17 +51,17 @@ main {
     width: 98%;
     margin-top: 1.5vh;
     border: solid 1px;
-    
+
 }
 
 .side-content > article > h2 {
-    
+
     margin: auto;
 }
 .side-content > article > p {
     width: 90%;
     margin: auto;
-    
+
 
 }
 
